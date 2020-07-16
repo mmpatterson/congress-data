@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Congress Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Analyzing State Representatives</h1>
+        <p class="lead">This tool is meant to help the user research more about state representatives in Congress.</p>
+        <hr class="my-4"></hr>
+        <p>Click on a state to get state-specific information
+            </br>
+           
+        </p>
+        <div id="map-obj"></div>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    </br>
+    <div class="col-md-10">
+        <div id="table-area" class="">
+            <table id="rep-table" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="table-head">Name</th>
+                        <th class="table-head">State</th>
+                        <th class="table-head">District</th>
+                        <th class="table-head">Party</th>
+                        <th class="table-head">Missed Pct.</th>
+                        <th class="table-head">Missed Votes</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- <div id="svg-area"></div> -->
+
+    <div id="member-list"></div>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="key.js"></script>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+
+    <script src="app.js"></script>
+    <script src="maps.js"></script>
+
+</body>
+
+</html>
